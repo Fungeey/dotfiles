@@ -18,8 +18,12 @@ vim.opt.expandtab = true
 
 vim.opt.conceallevel=1
 
-vim.g.mapleader = "/"
+vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {desc = "Find files"})
+
+--Obsidian hotkeys
+
+vim.keymap.set("n", "<leader>m", ":ObsidianToggleCheckbox<CR>", {desc = "Toggle Checkbox"})
 
 require("lazy").setup({
   {
